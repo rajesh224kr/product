@@ -1,0 +1,23 @@
+<html>
+<body style="text-align: center;background-color: antiquewhite">
+<h2>Delete Product </h2>
+<table align="center" border="2" bgcolor="#f0f8ff"style="background-color: honeydew" >
+    <tr>
+        <td>idno</td>
+        <td>name</td>
+        <td>price</td>
+        <td>date</td>
+        <td>delete</td>
+    </tr>
+    {% for x in data %}
+    <tr>
+        <td>{{ x.idno }}</td>
+        <td>{{ x.name }}</td>
+        <td>{{ x.price }}</td>
+        <td>{{ x.date}}</td>
+        <td><a href="/delete/{{ x.idno }}">yes</a></td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

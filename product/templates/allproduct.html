@@ -1,0 +1,21 @@
+<html>
+<body style="text-align: center">
+<table align="center" border="2" bgcolor="#afeeee"style="background-color: azure">
+    <tr>
+        <td>idno</td>
+        <td>name</td>
+        <td>price</td>
+        <td>date</td>
+    </tr>
+    {% for x in data %}
+    <tr>
+        <td>{{ x.idno }}</td>
+        <td>{{ x.name }}</td>
+        <td>{{ x.price }}</td>
+        <td>{{ x.date}}</td>
+    </tr>
+    {% endfor %}
+</table>
+<button style="align-items: center"> <a href="/" style="background-color:ghostwhite">View product</a></button>
+</body>
+</html>

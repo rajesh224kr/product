@@ -1,0 +1,22 @@
+<html>
+<body>
+<table align="center" border="2" >
+    <tr>
+        <td>idno</td>
+        <td>name</td>
+        <td>price</td>
+        <td>date</td>
+        <td>update</td>
+    </tr>
+    {% for x in data %}
+    <tr>
+        <td>{{ x.idno }}</td>
+        <td>{{ x.name }}</td>
+        <td>{{ x.price }}</td>
+        <td>{{ x.date}}</td>
+        <td><a href="/updatep/{{ x.idno }}">yes</a></td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
