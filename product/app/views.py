@@ -46,3 +46,8 @@ def deletedata(request):
 def deletedata1(request):
     data= MyProductList.objects.all()
     return render(request,'deletedata.html',{'data':data})
+
+
+def deletedata1(request):
+    data= MyProductList.objects.all()
+    return render(request,'deletedata.html',{'data':data})
