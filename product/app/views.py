@@ -1,5 +1,8 @@
 from django.shortcuts import render, redirect
 
+from rest_framework.views import APIView
+from rest_framework.response import Response
+
 # Create your views here.
 from app.models import MyProductList
 
@@ -43,3 +46,12 @@ def delete(request,idno):
 def deletedata(request):
     data= MyProductList.objects.all()
     return render(request,'deletedata.html',{'data':data})
+
+
+#####   nlp project
+
+class Nlppro(APIView):
+    def post(self,request,format=None):
+        print('hi')
+        data = {'name':'rajesh'}
+        return Response(data=data)
