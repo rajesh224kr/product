@@ -53,5 +53,10 @@ def deletedata(request):
 class Nlppro(APIView):
     def post(self,request,format=None):
         print('hi')
-        data = {'name':'rajesh'}
+        a= 10
+        b = 20
+        data = {'name':'rajesh',
+                'a':a,
+                'b':b
+        }
         return Response(data=data)
